@@ -1,6 +1,7 @@
 /* Flexbox Part 1 */
 #flex-section1 ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     list-style: none;
     margin: 0;
@@ -43,6 +44,7 @@
     align-content: space-around;
     justify-content: center;
     align-items: center;
+    height: 300px;
 }
 
 #flex-section3 .tags ul {
@@ -71,10 +73,10 @@
     padding: 10px;
     border: 8px solid #000088;
     grid-row-start: 1;
-    border-radius: 1;
     grid-column-start: 2;
     grid-column-end: 4;
     z-index: 1;
+    border-radius: 1px;
 }
 
 #grid-section2 .gridboxred {
@@ -107,7 +109,9 @@
 
 #grid-section3 .box2 {
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 
 #grid-section3 .box3 {
@@ -133,14 +137,13 @@
     color: #000;
     padding: 20px;
     text-decoration: none;
-    transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 #transition-section .box a:hover {
     background-color: #cc0000;
     color: #fff;
-    transition: background-color 0.5s ease-in, color 0.5s ease-in;
-    transition-delay: 3s;
+    transition-delay: 0.5s;
 }
 
 /* end Transition Part */
