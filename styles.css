@@ -1,4 +1,6 @@
 /* Flexbox Part 1 */
+
+
 #flex-section1 ul {
     display: flex;
     flex-direction: row;
@@ -6,34 +8,42 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    
 }
 
 /* end Flexbox Part 1 */
 
+
 /* Flexbox Part 2 */
 
 #flex-section2 ul {
+
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
     flex-grow: 1;
+
 }
 
-#flex-section2 li {
+#flex-section2 li { 
     flex: 1;
 }
 
 #flex-section2 .item1 {
+
     order: 1;
+
 }
 
 #flex-section2 .item2 {
+
     order: 3;
-    flex-shrink: 1; /* Added flex-shrink for clarity */
+    flex-shrink: 1;
 }
 
 #flex-section2 .item3 {
+
     order: 2;
 }
 
@@ -41,12 +51,13 @@
 
 
 /* Flexbox Part 3 */
+
 #flex-section3 .box {
     display: flex;
     align-content: space-around;
     justify-content: center;
     align-items: center;
-    height: 300px;
+   
 }
 
 #flex-section3 .tags ul {
@@ -54,79 +65,89 @@
     list-style: none;
     flex-wrap: wrap;
     padding: 0;
+
 }
 
 /* end Flexbox Part 3 */
 
+
 /* Grid Part 1 */
+
 #grid-section1 .grid {
     display: grid;
     gap: 20px;
     grid-auto-rows: 100px;
-    grid-template-columns: repeat(4, 1fr);
+    /*grid-template-columns: repeat(4, 25%);*/
+    grid-template-columns: repeat(4,1fr);
+    
 }
 
 /* end Grid Part 1 */
 
+
 /* Grid Part 2 */
+
 #grid-section2 .gridboxblue {
-    background-color: rgba(0, 0, 204, 0.6);
+    background-color: rgba(0,0,204,.6);
     color: #fff;
     padding: 10px;
     border: 8px solid #000088;
     grid-row-start: 1;
+    border-radius: 1;
     grid-column-start: 2;
     grid-column-end: 4;
+    grid-row-end: 4;
     z-index: 1;
-    border-radius: 1px;
 }
 
 #grid-section2 .gridboxred {
-    background-color: rgba(204, 0, 0, 0.6);
+    background-color: rgba(204,0,0,.6);
     color: #fff;
     padding: 10px;
     border: 8px solid #880000;
     border-radius: 8px;
     grid-row-start: 2;
+    /* grid-row-end: 2; */
     grid-column-start: 1;
     grid-column-end: 3;
+    /* opacity: 0.5;*/
 }
 
 /* end Grid Part 2 */
+
 
 /* Grid Part 3 */
 
 #grid-section3 .grid {
     display: grid;
-    grid-template-columns: 2/3 1/3; /* Changed fractional units for clarity */
+    grid-template-columns: 2/3 1/3;
     grid-template-rows: 100px 300px 100px;
     gap: 10px;
+
+
 }
 
 #grid-section3 .box1 {
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 2; 
     grid-column-start: 1;
     grid-column-end: 4;
 }
 
 #grid-section3 .box2 {
-    grid-row-start: 1;
-    grid-row-end: 3; /* Changed '2' to '3' for clarity */
-    grid-column-start: 2; /* Added grid-column-start for clarity */
-    grid-column-end: 4; /* Added grid-column-end for clarity */
+
 }
 
 #grid-section3 .box3 {
     grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 3; 
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
 #grid-section3 .box4 {
     grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-end: 4; 
     grid-column-start: 1;
     grid-column-end: 4;
 }
@@ -142,13 +163,17 @@
     color: #000;
     padding: 20px;
     text-decoration: none;
-    transition: background-color 3s ease-out; /* Increased transition duration for clarity */
+    transition: background-color 3s ease-out;
+
+
 }
 
 #transition-section .box a:hover {
     background-color: #cc0000;
     color: #fff;
     transition-delay: .5s;
+
+
 }
 
 /* end Transition Part */
