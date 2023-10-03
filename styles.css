@@ -1,18 +1,16 @@
-/* Flexbox Part 1 - Revised */
-
+/* Flexbox Part 1 */
 #flex-section1 ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-/* end Flexbox Part 1 - Revised */
+/* end Flexbox Part 1 */
 
-
-/* Flexbox Part 2 - Revised */
-
+/* Flexbox Part 2 */
 #flex-section2 ul {
     display: flex;
     list-style: none;
@@ -37,12 +35,9 @@
 #flex-section2 .item3 {
     order: 2;
 }
+/* end Flexbox Part 2 */
 
-/* end Flexbox Part 2 - Revised */
-
-
-/* Flexbox Part 3 - Revised */
-
+/* Flexbox Part 3 */
 #flex-section3 .box {
     display: flex;
     align-content: space-around;
@@ -56,24 +51,18 @@
     flex-wrap: wrap;
     padding: 0;
 }
+/* end Flexbox Part 3 */
 
-/* end Flexbox Part 3 - Revised */
-
-
-/* Grid Part 1 - Revised */
-
+/* Grid Part 1 */
 #grid-section1 .grid {
     display: grid;
     gap: 20px;
     grid-auto-rows: 100px;
     grid-template-columns: repeat(4, 1fr);
 }
+/* end Grid Part 1 */
 
-/* end Grid Part 1 - Revised */
-
-
-/* Grid Part 2 - Revised */
-
+/* Grid Part 2 */
 #grid-section2 .gridboxblue {
     background-color: rgba(0, 0, 204, .6);
     color: #fff;
@@ -97,12 +86,9 @@
     grid-column-start: 1;
     grid-column-end: 3;
 }
+/* end Grid Part 2 */
 
-/* end Grid Part 2 - Revised */
-
-
-/* Grid Part 3 - Revised */
-
+/* Grid Part 3 */
 #grid-section3 .grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -111,47 +97,34 @@
 }
 
 #grid-section3 .box1 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
-#grid-section3 .box2 {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 4;
 }
 
 #grid-section3 .box3 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 2;
 }
 
 #grid-section3 .box4 {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 4;
 }
+/* end Grid Part 3 */
 
-/* end Grid Part 3 - Revised */
-
-
-/* Transition Part - Revised */
-
+/* Transition Part */
 #transition-section .box a {
     display: inline-block;
     background-color: #ccc;
     color: #000;
     padding: 20px;
     text-decoration: none;
-    transition: background-color 0.5s ease, color 0.5s ease, transition-delay 3s ease;
+    transition: background-color 3s ease-out;
 }
 
 #transition-section .box a:hover {
     background-color: #cc0000;
     color: #fff;
-    transition-delay: 3s;
+    transition-delay: .5s;
 }
-
-/* end Transition Part - Revised */
+/* end Transition Part */
